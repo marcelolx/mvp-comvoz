@@ -354,10 +354,12 @@ function LandingPage() {
               </a>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-md border-2 border-blue-500 transform scale-105">
-              <div className="bg-blue-500 text-white text-sm font-semibold px-3 py-1 rounded-full inline-block mb-4">
-                Mais Popular
+              <div className="flex justify-between items-center mb-4">
+                <h3 className="text-xl font-semibold">Intermediário</h3>
+                <div className="bg-blue-500 text-white text-sm font-semibold px-3 py-1 rounded-full">
+                  Mais Popular
+                </div>
               </div>
-              <h3 className="text-xl font-semibold mb-4">Intermediário</h3>
               <div className="mb-6">
                 <div className="flex items-center justify-center space-x-4 mb-4">
                   <button className="text-blue-600 font-semibold border-b-2 border-blue-600 pb-1">Mensal</button>
