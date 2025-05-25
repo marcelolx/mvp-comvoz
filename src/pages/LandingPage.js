@@ -5,22 +5,33 @@ function LandingPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white overflow-x-hidden">
       {/* Hero Section */}
-      <div className="container mx-auto px-4 py-16">
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-6xl font-bold text-blue-800 mb-6">
-            ComVóz
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-600 mb-8">
-            Monitoramento Inteligente do Idoso
-          </p>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-12">
-            Nossa solução é um sistema composto por um aplicativo conectado a uma dispositivo inteligente 
-            que monitora dados como batimentos cardíacos, sono, movimentação e quedas, e envia tudo 
-            automaticamente para o celular da família, permitindo acompanhamento em tempo real.
-          </p>
+      <div className="container mx-auto px-4 py-16 max-w-6xl">
+        <div className="flex flex-col md:flex-row items-center gap-12">
+          <div className="flex-1 text-center md:text-left max-w-xl">
+            <h1 className="text-4xl md:text-5xl font-bold text-blue-800 mb-4">
+              ComVóz
+            </h1>
+            <p className="text-xl md:text-2xl text-gray-600 mb-6">
+              Monitoramento Inteligente do Idoso
+            </p>
+            <p className="text-lg text-gray-600 mb-8">
+              Nossa solução é um sistema composto por um aplicativo conectado a uma dispositivo inteligente 
+              que monitora dados como batimentos cardíacos, sono, movimentação e quedas, e envia tudo 
+              automaticamente para o celular da família, permitindo acompanhamento em tempo real.
+            </p>
+          </div>
+          <div className="flex-1 max-w-xl">
+            <img 
+              src="/homepage.png" 
+              alt="ComVóz Sistema de Monitoramento" 
+              className="w-full h-auto rounded-lg shadow-xl"
+            />
+          </div>
         </div>
+      </div>
 
-        {/* Features Section */}
+      {/* Features Section */}
+      <div className="container mx-auto px-4 max-w-6xl">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
           <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
             <div className="text-4xl mb-4">❤️</div>
@@ -46,8 +57,10 @@ function LandingPage() {
             <p className="text-gray-600">Alerta imediato em caso de quedas</p>
           </div>
         </div>
+      </div>
 
-        {/* Demo Section */}
+      {/* Demo Section */}
+      <div className="container mx-auto px-4 max-w-6xl">
         <div className="mt-24 mb-24">
           <div className="bg-white p-8 rounded-2xl shadow-lg max-w-3xl mx-auto">
             <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center">Veja como você acompanha</h2>
@@ -65,8 +78,10 @@ function LandingPage() {
             </div>
           </div>
         </div>
+      </div>
 
-        {/* Benefits Section */}
+      {/* Benefits Section */}
+      <div className="container mx-auto px-4 max-w-6xl">
         <div className="mt-24 text-center">
           <h2 className="text-3xl font-bold text-gray-800 mb-12">Por que escolher o ComVóz?</h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -87,8 +102,10 @@ function LandingPage() {
             </div>
           </div>
         </div>
+      </div>
 
-        {/* Testimonials Section */}
+      {/* Testimonials Section */}
+      <div className="container mx-auto px-4 max-w-6xl">
         <div className="mt-24">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">O que nossos usuários dizem</h2>
           <div className="grid md:grid-cols-2 gap-8">
@@ -114,8 +131,10 @@ function LandingPage() {
             </div>
           </div>
         </div>
+      </div>
 
-        {/* Compatible Devices Section */}
+      {/* Compatible Devices Section */}
+      <div className="container mx-auto px-4 max-w-6xl">
         <div className="mt-24">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">Dispositivos Compatíveis</h2>
           <div className="grid md:grid-cols-2 gap-8 mb-12">
@@ -278,8 +297,10 @@ function LandingPage() {
             </div>
           </div>
         </div>
+      </div>
 
-        {/* Pricing Section */}
+      {/* Pricing Section */}
+      <div className="container mx-auto px-4 max-w-6xl">
         <div className="mt-24">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">Planos e Preços</h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -417,8 +438,10 @@ function LandingPage() {
             </div>
           </div>
         </div>
+      </div>
 
-        {/* FAQ Section */}
+      {/* FAQ Section */}
+      <div className="container mx-auto px-4 max-w-6xl">
         <div className="mt-24">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">Perguntas Frequentes</h2>
           <div className="grid md:grid-cols-2 gap-8">
@@ -440,8 +463,10 @@ function LandingPage() {
             </div>
           </div>
         </div>
+      </div>
 
-        {/* Final CTA Section */}
+      {/* Final CTA Section */}
+      <div className="container mx-auto px-4 max-w-6xl">
         <div className="mt-24 text-center bg-blue-600 text-white p-12 rounded-2xl">
           <h2 className="text-3xl font-bold mb-6">Comece a cuidar com mais tranquilidade hoje mesmo</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
