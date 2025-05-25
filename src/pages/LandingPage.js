@@ -324,7 +324,7 @@ function LandingPage() {
                   Acompanhamento de medicamentos
                 </li>
                 <li className="flex items-center">
-                  <span className="text-green-500 mr-2">✓</span>
+                  <span className="mr-2 text-green-500">✓</span>
                   Alertas por SMS
                 </li>
                 <li className="flex items-center">
@@ -341,7 +341,7 @@ function LandingPage() {
                 </li>
               </ul>
               <a
-                href="https://wa.me/5549999464580"
+                href="https://wa.me/5549998067181"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block px-6 py-3 text-center text-white transition duration-300 bg-blue-600 rounded-lg hover:bg-blue-700"
@@ -383,16 +383,16 @@ function LandingPage() {
                   Relatórios completos
                 </li>
                 <li className="flex items-center">
-                  <span className="text-green-500 mr-2">✓</span>
+                  <span className="mr-2 text-green-500">✓</span>
                   Lembretes de medicamentos avançados
                 </li>
-                <li className="flex items-center text-blue-600 font-semibold">
-                  <span className="text-blue-600 mr-2">🎁</span>
+                <li className="flex items-center font-semibold text-blue-600">
+                  <span className="mr-2 text-blue-600">🎁</span>
                   10% de desconto no plano anual
                 </li>
               </ul>
               <a
-                href="https://wa.me/5549999464580"
+                href="https://wa.me/5549998067181"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block px-6 py-3 text-center text-white transition duration-300 bg-blue-600 rounded-lg hover:bg-blue-700"
@@ -429,16 +429,16 @@ function LandingPage() {
                   Suporte prioritário
                 </li>
                 <li className="flex items-center">
-                  <span className="text-green-500 mr-2">✓</span>
+                  <span className="mr-2 text-green-500">✓</span>
                   Gestão de medicamentos para múltiplos idosos
                 </li>
-                <li className="flex items-center text-blue-600 font-semibold">
-                  <span className="text-blue-600 mr-2">🎁</span>
+                <li className="flex items-center font-semibold text-blue-600">
+                  <span className="mr-2 text-blue-600">🎁</span>
                   10% de desconto no plano anual
                 </li>
               </ul>
               <a
-                href="https://wa.me/5549999464580"
+                href="https://wa.me/5549998067181"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block px-6 py-3 text-center text-white transition duration-300 bg-blue-600 rounded-lg hover:bg-blue-700"
@@ -454,7 +454,7 @@ function LandingPage() {
               Algo não te agradou e está em busca de mais?
             </p>
             <a
-              href="https://wa.me/5549999464580"
+              href="https://wa.me/5549998067181"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-8 py-4 text-lg font-semibold text-white transition duration-300 bg-gray-800 rounded-lg shadow-lg hover:bg-gray-700 hover:shadow-xl"
