@@ -311,33 +311,29 @@ function LandingPage() {
                   <button className="text-blue-600 font-semibold border-b-2 border-blue-600 pb-1">Mensal</button>
                   <button className="text-gray-500 hover:text-blue-600">Anual</button>
                 </div>
-                <p className="text-3xl font-bold mb-2">R$ 99<span className="text-lg text-gray-500">/mês</span></p>
-                <p className="text-sm text-gray-500 text-center">ou R$ 1.069/ano <span className="text-green-600">(10% off)</span></p>
+                <p className="text-3xl font-bold mb-2">R$ 39,90<span className="text-lg text-gray-500">/mês</span></p>
+                <p className="text-sm text-gray-500 text-center">ou R$ 430,92/ano <span className="text-green-600">(10% off)</span></p>
               </div>
               <ul className="space-y-2 mb-6">
                 <li className="flex items-center">
                   <span className="text-green-500 mr-2">✓</span>
-                  Monitoramento cardíaco básico
+                  Monitoramento de batimentos
                 </li>
                 <li className="flex items-center">
                   <span className="text-green-500 mr-2">✓</span>
-                  Detecção de quedas
+                  Monitoramento de pressão
                 </li>
                 <li className="flex items-center">
                   <span className="text-green-500 mr-2">✓</span>
-                  Botão de Socorro
+                  Alertas por SMS
                 </li>
                 <li className="flex items-center">
                   <span className="text-green-500 mr-2">✓</span>
-                  App para família
+                  Alertas por Push
                 </li>
                 <li className="flex items-center">
                   <span className="text-green-500 mr-2">✓</span>
-                  Notificações básicas
-                </li>
-                <li className="flex items-center">
-                  <span className="text-green-500 mr-2">✓</span>
-                  Suporte por email
+                  Alertas por Ligação
                 </li>
                 <li className="flex items-center text-blue-600 font-semibold">
                   <span className="text-blue-600 mr-2">🎁</span>
@@ -353,9 +349,10 @@ function LandingPage() {
                 Começar Agora
               </a>
             </div>
+
             <div className="bg-white p-6 rounded-xl shadow-md border-2 border-blue-500 transform scale-105">
               <div className="flex justify-between items-center mb-4">
-                <h3 className="text-xl font-semibold">Intermediário</h3>
+                <h3 className="text-xl font-semibold">Premium</h3>
                 <div className="bg-blue-500 text-white text-sm font-semibold px-3 py-1 rounded-full">
                   Mais Popular
                 </div>
@@ -365,8 +362,8 @@ function LandingPage() {
                   <button className="text-blue-600 font-semibold border-b-2 border-blue-600 pb-1">Mensal</button>
                   <button className="text-gray-500 hover:text-blue-600">Anual</button>
                 </div>
-                <p className="text-3xl font-bold mb-2">R$ 299<span className="text-lg text-gray-500">/mês</span></p>
-                <p className="text-sm text-gray-500 text-center">ou R$ 3.049/ano <span className="text-green-600">(15% off)</span></p>
+                <p className="text-3xl font-bold mb-2">R$ 59,90<span className="text-lg text-gray-500">/mês</span></p>
+                <p className="text-sm text-gray-500 text-center">ou R$ 646,92/ano <span className="text-green-600">(10% off)</span></p>
               </div>
               <ul className="space-y-2 mb-6">
                 <li className="flex items-center">
@@ -375,11 +372,61 @@ function LandingPage() {
                 </li>
                 <li className="flex items-center">
                   <span className="text-green-500 mr-2">✓</span>
-                  Análise de sono detalhada
+                  GPS ativo
                 </li>
                 <li className="flex items-center">
                   <span className="text-green-500 mr-2">✓</span>
-                  Relatórios semanais
+                  Histórico detalhado
+                </li>
+                <li className="flex items-center">
+                  <span className="text-green-500 mr-2">✓</span>
+                  Cerca virtual
+                </li>
+                <li className="flex items-center">
+                  <span className="text-green-500 mr-2">✓</span>
+                  Relatórios completos
+                </li>
+                <li className="flex items-center text-blue-600 font-semibold">
+                  <span className="text-blue-600 mr-2">🎁</span>
+                  10% de desconto no plano anual
+                </li>
+              </ul>
+              <a
+                href="https://wa.me/5549999464580"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-center bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300"
+              >
+                Começar Agora
+              </a>
+            </div>
+
+            <div className="bg-white p-6 rounded-xl shadow-md">
+              <h3 className="text-xl font-semibold mb-4">Familiar</h3>
+              <div className="mb-6">
+                <div className="flex items-center justify-center space-x-4 mb-4">
+                  <button className="text-blue-600 font-semibold border-b-2 border-blue-600 pb-1">Mensal</button>
+                  <button className="text-gray-500 hover:text-blue-600">Anual</button>
+                </div>
+                <p className="text-3xl font-bold mb-2">R$ 89,90<span className="text-lg text-gray-500">/mês</span></p>
+                <p className="text-sm text-gray-500 text-center">ou R$ 970,92/ano <span className="text-green-600">(10% off)</span></p>
+              </div>
+              <ul className="space-y-2 mb-6">
+                <li className="flex items-center">
+                  <span className="text-green-500 mr-2">✓</span>
+                  Tudo do plano Premium
+                </li>
+                <li className="flex items-center">
+                  <span className="text-green-500 mr-2">✓</span>
+                  Até 3 idosos no mesmo plano
+                </li>
+                <li className="flex items-center">
+                  <span className="text-green-500 mr-2">✓</span>
+                  Dashboards compartilhados
+                </li>
+                <li className="flex items-center">
+                  <span className="text-green-500 mr-2">✓</span>
+                  Gerenciamento centralizado
                 </li>
                 <li className="flex items-center">
                   <span className="text-green-500 mr-2">✓</span>
@@ -387,7 +434,7 @@ function LandingPage() {
                 </li>
                 <li className="flex items-center text-blue-600 font-semibold">
                   <span className="text-blue-600 mr-2">🎁</span>
-                  15% de desconto + Smartwatch ComVóz grátis no plano anual
+                  10% de desconto no plano anual
                 </li>
               </ul>
               <a
@@ -399,47 +446,21 @@ function LandingPage() {
                 Começar Agora
               </a>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-md">
-              <h3 className="text-xl font-semibold mb-4">Premium</h3>
-              <div className="mb-6">
-                <div className="flex items-center justify-center space-x-4 mb-4">
-                  <button className="text-blue-600 font-semibold border-b-2 border-blue-600 pb-1">Mensal</button>
-                  <button className="text-gray-500 hover:text-blue-600">Anual</button>
-                </div>
-                <p className="text-3xl font-bold mb-2">R$ 599<span className="text-lg text-gray-500">/mês</span></p>
-                <p className="text-sm text-gray-500 text-center">ou R$ 5.750/ano <span className="text-green-600">(20% off)</span></p>
-              </div>
-              <ul className="space-y-2 mb-6">
-                <li className="flex items-center">
-                  <span className="text-green-500 mr-2">✓</span>
-                  Tudo do plano Intermediário
-                </li>
-                <li className="flex items-center">
-                  <span className="text-green-500 mr-2">✓</span>
-                  Atendimento de urgência 24/7
-                </li>
-                <li className="flex items-center">
-                  <span className="text-green-500 mr-2">✓</span>
-                  Suporte médico online
-                </li>
-                <li className="flex items-center">
-                  <span className="text-green-500 mr-2">✓</span>
-                  Relatórios personalizados
-                </li>
-                <li className="flex items-center text-blue-600 font-semibold">
-                  <span className="text-blue-600 mr-2">🎁</span>
-                  20% de desconto + Smartwatch ComVóz grátis no plano anual
-                </li>
-              </ul>
-              <a
-                href="https://wa.me/5549999464580"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-center bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300"
-              >
-                Começar Agora
-              </a>
-            </div>
+          </div>
+
+          {/* Custom Plan Button */}
+          <div className="mt-12 text-center">
+            <p className="text-lg text-gray-600 mb-4">
+              Algo não te agradou e está em busca de mais?
+            </p>
+            <a
+              href="https://wa.me/5549999464580"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-gray-800 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-700 transition duration-300 shadow-lg hover:shadow-xl"
+            >
+              Plano personalizado - Entrar em contato
+            </a>
           </div>
         </div>
       </div>
