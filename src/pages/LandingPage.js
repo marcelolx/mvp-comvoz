@@ -321,6 +321,10 @@ function LandingPage() {
                 </li>
                 <li className="flex items-center">
                   <span className="mr-2 text-green-500">✓</span>
+                  Acompanhamento de medicamentos
+                </li>
+                <li className="flex items-center">
+                  <span className="text-green-500 mr-2">✓</span>
                   Alertas por SMS
                 </li>
                 <li className="flex items-center">
@@ -378,8 +382,12 @@ function LandingPage() {
                   <span className="mr-2 text-green-500">✓</span>
                   Relatórios completos
                 </li>
-                <li className="flex items-center font-semibold text-blue-600">
-                  <span className="mr-2 text-blue-600">🎁</span>
+                <li className="flex items-center">
+                  <span className="text-green-500 mr-2">✓</span>
+                  Lembretes de medicamentos avançados
+                </li>
+                <li className="flex items-center text-blue-600 font-semibold">
+                  <span className="text-blue-600 mr-2">🎁</span>
                   10% de desconto no plano anual
                 </li>
               </ul>
@@ -420,8 +428,12 @@ function LandingPage() {
                   <span className="mr-2 text-green-500">✓</span>
                   Suporte prioritário
                 </li>
-                <li className="flex items-center font-semibold text-blue-600">
-                  <span className="mr-2 text-blue-600">🎁</span>
+                <li className="flex items-center">
+                  <span className="text-green-500 mr-2">✓</span>
+                  Gestão de medicamentos para múltiplos idosos
+                </li>
+                <li className="flex items-center text-blue-600 font-semibold">
+                  <span className="text-blue-600 mr-2">🎁</span>
                   10% de desconto no plano anual
                 </li>
               </ul>
@@ -433,11 +445,11 @@ function LandingPage() {
               >
                 Começar Agora
               </a>
-            </div>
-          </div>
+            </div >
+          </div >
 
           {/* Custom Plan Button */}
-          <div className="mt-12 text-center">
+          < div className="mt-12 text-center" >
             <p className="mb-4 text-lg text-gray-600">
               Algo não te agradou e está em busca de mais?
             </p>
@@ -449,12 +461,12 @@ function LandingPage() {
             >
               Plano personalizado - Entrar em contato
             </a>
-          </div>
-        </div>
-      </div>
+          </div >
+        </div >
+      </div >
 
       {/* FAQ Section */}
-      <div className="container max-w-6xl px-4 mx-auto">
+      < div className="container max-w-6xl px-4 mx-auto" >
         <div className="mt-24">
           <h2 className="mb-12 text-3xl font-bold text-center text-gray-800">Perguntas Frequentes</h2>
           <div className="grid gap-8 md:grid-cols-2">
@@ -476,10 +488,10 @@ function LandingPage() {
             </div>
           </div>
         </div>
-      </div>
+      </div >
 
       {/* Final CTA Section */}
-      <div className="container max-w-6xl px-4 mx-auto">
+      < div className="container max-w-6xl px-4 mx-auto" >
         <div className="p-12 mt-24 text-center text-white bg-blue-600 rounded-2xl">
           <h2 className="mb-6 text-3xl font-bold">Comece a cuidar com mais tranquilidade hoje mesmo</h2>
           <p className="max-w-2xl mx-auto mb-8 text-xl">
@@ -492,8 +504,8 @@ function LandingPage() {
             Veja a demonstração
           </Link>
         </div>
-      </div>
-    </div>
+      </div >
+    </div >
   );
 }
 
