@@ -341,7 +341,7 @@ function LandingPage() {
                 </li>
               </ul>
               <a
-                href="https://wa.me/5549998067181?text=Olá, estou interessado no ComVoz"
+                href="https://wa.me/5549998067181?text=Olá, estou interessado no plano básico do ComVoz"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block px-6 py-3 text-center text-white transition duration-300 bg-blue-600 rounded-lg hover:bg-blue-700"
@@ -392,7 +392,7 @@ function LandingPage() {
                 </li>
               </ul>
               <a
-                href="https://wa.me/5549998067181?text=Olá, estou interessado no ComVoz"
+                href="https://wa.me/5549998067181?text=Olá, estou interessado no plano Premium do ComVoz"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block px-6 py-3 text-center text-white transition duration-300 bg-blue-600 rounded-lg hover:bg-blue-700"
@@ -438,7 +438,7 @@ function LandingPage() {
                 </li>
               </ul>
               <a
-                href="https://wa.me/5549998067181?text=Olá, estou interessado no ComVoz"
+                href="https://wa.me/5549998067181?text=Olá, estou interessado no plano Familiar do ComVoz"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block px-6 py-3 text-center text-white transition duration-300 bg-blue-600 rounded-lg hover:bg-blue-700"
@@ -454,7 +454,7 @@ function LandingPage() {
               Algo não te agradou e está em busca de mais?
             </p>
             <a
-              href="https://wa.me/5549998067181?text=Olá, estou interessado no ComVoz"
+              href="https://wa.me/5549998067181?text=Olá, estou interessado no plano personalizado do ComVoz"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-8 py-4 text-lg font-semibold text-white transition duration-300 bg-gray-800 rounded-lg shadow-lg hover:bg-gray-700 hover:shadow-xl"
