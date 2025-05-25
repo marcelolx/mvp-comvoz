@@ -19,16 +19,18 @@ function App() {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="bg-blue-600 text-white p-4 shadow-md flex items-center justify-between z-10 flex-shrink-0">
-        <h1 className="text-xl md:text-2xl font-bold flex items-center">
-          <span className="mr-2">🏠</span> ComVóz
-          <span className="ml-2 text-lg md:text-xl font-light hidden sm:inline">Monitoramento Inteligente do Idoso</span>
+      <header className="z-10 flex items-center justify-between flex-shrink-0 p-4 text-white bg-blue-600 shadow-md">
+        <h1 className="flex items-center text-xl font-bold md:text-2xl">
+          <Link to="/" className="flex items-center hover:text-blue-100">
+            <span className="mr-2">🏠</span> ComVóz
+            <span className="hidden ml-2 text-lg font-light md:text-xl sm:inline">Monitoramento Inteligente do Idoso</span>
+          </Link>
         </h1>
         <div className="flex items-center">
-          <span className="text-sm opacity-80 hidden md:inline mr-4">Modo Demo</span>
+          <span className="hidden mr-4 text-sm opacity-80 md:inline">Modo Demo</span>
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 rounded-lg hover:bg-blue-500"
+            className="p-2 rounded-lg md:hidden hover:bg-blue-500"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               {isMobileMenuOpen ? (
@@ -45,7 +47,7 @@ function App() {
         <nav className={`${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0 fixed md:static inset-y-0 left-0 w-64 bg-white p-4 shadow-lg flex flex-col z-20 transition-transform duration-300 ease-in-out`}>
           <div className="mb-6">
             <h2 className="text-xl font-semibold text-gray-700">Seções</h2>
-            <p className="text-sm text-gray-500 mt-1">Navegue pelas áreas de monitoramento.</p>
+            <p className="mt-1 text-sm text-gray-500">Navegue pelas áreas de monitoramento.</p>
           </div>
           <ul className="space-y-2">
             <li>
@@ -98,12 +100,12 @@ function App() {
 
         {isMobileMenuOpen && (
           <div
-            className="fixed inset-0 bg-black bg-opacity-50 z-10 md:hidden"
+            className="fixed inset-0 z-10 bg-black bg-opacity-50 md:hidden"
             onClick={() => setIsMobileMenuOpen(false)}
           />
         )}
 
-        <main id="content-area" className="flex-1 p-4 md:p-6 overflow-y-auto custom-scroll bg-gray-50">
+        <main id="content-area" className="flex-1 p-4 overflow-y-auto md:p-6 custom-scroll bg-gray-50">
           <Routes>
             <Route path="/" element={<LandingPage />} />
             <Route path="/demo" element={<Dashboard />} />
