@@ -325,6 +325,10 @@ function LandingPage() {
                 </li>
                 <li className="flex items-center">
                   <span className="text-green-500 mr-2">✓</span>
+                  Botão de Socorro
+                </li>
+                <li className="flex items-center">
+                  <span className="text-green-500 mr-2">✓</span>
                   App para família
                 </li>
                 <li className="flex items-center">
