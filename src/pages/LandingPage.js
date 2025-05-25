@@ -307,10 +307,6 @@ function LandingPage() {
             <div className="bg-white p-6 rounded-xl shadow-md">
               <h3 className="text-xl font-semibold mb-4">Básico</h3>
               <div className="mb-6">
-                <div className="flex items-center justify-center space-x-4 mb-4">
-                  <button className="text-blue-600 font-semibold border-b-2 border-blue-600 pb-1">Mensal</button>
-                  <button className="text-gray-500 hover:text-blue-600">Anual</button>
-                </div>
                 <p className="text-3xl font-bold mb-2">R$ 39,90<span className="text-lg text-gray-500">/mês</span></p>
                 <p className="text-sm text-gray-500 text-center">ou R$ 430,92/ano <span className="text-green-600">(10% off)</span></p>
               </div>
@@ -358,10 +354,6 @@ function LandingPage() {
                 </div>
               </div>
               <div className="mb-6">
-                <div className="flex items-center justify-center space-x-4 mb-4">
-                  <button className="text-blue-600 font-semibold border-b-2 border-blue-600 pb-1">Mensal</button>
-                  <button className="text-gray-500 hover:text-blue-600">Anual</button>
-                </div>
                 <p className="text-3xl font-bold mb-2">R$ 59,90<span className="text-lg text-gray-500">/mês</span></p>
                 <p className="text-sm text-gray-500 text-center">ou R$ 646,92/ano <span className="text-green-600">(10% off)</span></p>
               </div>
@@ -404,10 +396,6 @@ function LandingPage() {
             <div className="bg-white p-6 rounded-xl shadow-md">
               <h3 className="text-xl font-semibold mb-4">Familiar</h3>
               <div className="mb-6">
-                <div className="flex items-center justify-center space-x-4 mb-4">
-                  <button className="text-blue-600 font-semibold border-b-2 border-blue-600 pb-1">Mensal</button>
-                  <button className="text-gray-500 hover:text-blue-600">Anual</button>
-                </div>
                 <p className="text-3xl font-bold mb-2">R$ 89,90<span className="text-lg text-gray-500">/mês</span></p>
                 <p className="text-sm text-gray-500 text-center">ou R$ 970,92/ano <span className="text-green-600">(10% off)</span></p>
               </div>
