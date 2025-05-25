@@ -493,7 +493,7 @@ function LandingPage() {
       {/* Final CTA Section */}
       < div className="container max-w-6xl px-4 mx-auto" >
         <div className="p-12 mt-24 text-center text-white bg-blue-600 rounded-2xl">
-          <h2 className="mb-6 text-3xl font-bold">Comece a cuidar com mais tranquilidade hoje mesmo</h2>
+          <h2 className="mb-6 text-3xl font-bold">Comece a acompanhar com mais facilidade hoje mesmo</h2>
           <p className="max-w-2xl mx-auto mb-8 text-xl">
             Experimente gratuitamente por 7 dias e descubra como o ComVóz pode transformar o cuidado com seu familiar
           </p>
