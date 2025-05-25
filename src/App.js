@@ -1,75 +1,32 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
 import Dashboard from './pages/Dashboard';
 import Health from './pages/Health';
 import Medications from './pages/Medications';
 import LocationSecurity from './pages/LocationSecurity';
 import Insights from './pages/Insights';
-import {
-  ActivityData,
-  CapacitorHealthkit,
-  OtherData,
-  QueryOutput,
-  SampleNames,
-  SleepData,
-} from '@perfood/capacitor-healthkit';
-
-const READ_PERMISSIONS = ['calories', 'stairs', 'activity', 'steps', 'distance', 'duration', 'weight', 'stepCount'];
+import LandingPage from './pages/LandingPage';
 
 function App() {
   const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const isDemoRoute = location.pathname.startsWith('/demo');
 
-  const requestAuthorization = async () => {
-    try {
-      await CapacitorHealthkit.requestAuthorization({
-        all: [''],
-        read: READ_PERMISSIONS,
-        write: [''],
-      });
-    } catch (error) {
-      console.error('[HealthKitService] Error getting Authorization:', error);
-    }
-  };
-
-  const getActivityData = async (startDate, endDate = new Date()) => {
-    try {
-      const queryOptions = {
-        sampleName: SampleNames.STEP_COUNT,
-        startDate: startDate.toISOString(),
-        endDate: endDate.toISOString(),
-        limit: 1,
-      };
-
-      return await CapacitorHealthkit.queryHKitSampleType(queryOptions);
-    } catch (error) {
-      console.error(error);
-      return undefined;
-    }
-  };
-
-  useEffect(() => {
-    requestAuthorization().then(() => {
-      getActivityData({
-        startDate: new Date('2025-05-23'),
-        endDate: new Date('2025-05-24'),
-      }).then((data) => {
-        window.alert("Total de passos: " + data.resultData[0].value);
-      });
-    });
-  }, []);
-
+  // If we're not in the demo section, show the landing page
+  if (!isDemoRoute) {
+    return <LandingPage />;
+  }
 
   return (
-    <div className="flex flex-col h-screen overflow-hidden">
+    <div className="flex flex-col min-h-screen">
       <header className="bg-blue-600 text-white p-4 shadow-md flex items-center justify-between z-10 flex-shrink-0">
         <h1 className="text-xl md:text-2xl font-bold flex items-center">
           <span className="mr-2">🏠</span> ComVóz
           <span className="ml-2 text-lg md:text-xl font-light hidden sm:inline">Monitoramento Inteligente do Idoso</span>
         </h1>
         <div className="flex items-center">
-          <span className="text-sm opacity-80 hidden md:inline mr-4">Seu Aliado no Cuidado Conectado</span>
-          <button 
+          <span className="text-sm opacity-80 hidden md:inline mr-4">Modo Demo</span>
+          <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="md:hidden p-2 rounded-lg hover:bg-blue-500"
           >
@@ -92,46 +49,46 @@ function App() {
           </div>
           <ul className="space-y-2">
             <li>
-              <Link 
-                to="/" 
+              <Link
+                to="/demo"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className={`block p-3 rounded-lg text-gray-700 hover:bg-blue-100 hover:text-blue-700 transition duration-200 font-medium flex items-center ${location.pathname === '/' ? 'bg-blue-200 text-blue-800' : ''}`}
+                className={`block p-3 rounded-lg text-gray-700 hover:bg-blue-100 hover:text-blue-700 transition duration-200 font-medium flex items-center ${location.pathname === '/demo' ? 'bg-blue-200 text-blue-800' : ''}`}
               >
                 <span className="mr-2">📊</span> Visão Geral
               </Link>
             </li>
             <li>
-              <Link 
-                to="/saude" 
+              <Link
+                to="/demo/saude"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className={`block p-3 rounded-lg text-gray-700 hover:bg-blue-100 hover:text-blue-700 transition duration-200 flex items-center ${location.pathname === '/saude' ? 'bg-blue-200 text-blue-800' : ''}`}
+                className={`block p-3 rounded-lg text-gray-700 hover:bg-blue-100 hover:text-blue-700 transition duration-200 flex items-center ${location.pathname === '/demo/saude' ? 'bg-blue-200 text-blue-800' : ''}`}
               >
                 <span className="mr-2">❤️</span> Saúde e Bem-Estar
               </Link>
             </li>
             <li>
-              <Link 
-                to="/medicamentos" 
+              <Link
+                to="/demo/medicamentos"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className={`block p-3 rounded-lg text-gray-700 hover:bg-blue-100 hover:text-blue-700 transition duration-200 flex items-center ${location.pathname === '/medicamentos' ? 'bg-blue-200 text-blue-800' : ''}`}
+                className={`block p-3 rounded-lg text-gray-700 hover:bg-blue-100 hover:text-blue-700 transition duration-200 flex items-center ${location.pathname === '/demo/medicamentos' ? 'bg-blue-200 text-blue-800' : ''}`}
               >
                 <span className="mr-2">💊</span> Medicamentos e Lembretes
               </Link>
             </li>
             <li>
-              <Link 
-                to="/localizacao" 
+              <Link
+                to="/demo/localizacao"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className={`block p-3 rounded-lg text-gray-700 hover:bg-blue-100 hover:text-blue-700 transition duration-200 flex items-center ${location.pathname === '/localizacao' ? 'bg-blue-200 text-blue-800' : ''}`}
+                className={`block p-3 rounded-lg text-gray-700 hover:bg-blue-100 hover:text-blue-700 transition duration-200 flex items-center ${location.pathname === '/demo/localizacao' ? 'bg-blue-200 text-blue-800' : ''}`}
               >
                 <span className="mr-2">📍</span> Localização e Segurança
               </Link>
             </li>
             <li>
-              <Link 
-                to="/insights" 
+              <Link
+                to="/demo/insights"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className={`block p-3 rounded-lg text-gray-700 hover:bg-blue-100 hover:text-blue-700 transition duration-200 flex items-center ${location.pathname === '/insights' ? 'bg-blue-200 text-blue-800' : ''}`}
+                className={`block p-3 rounded-lg text-gray-700 hover:bg-blue-100 hover:text-blue-700 transition duration-200 flex items-center ${location.pathname === '/demo/insights' ? 'bg-blue-200 text-blue-800' : ''}`}
               >
                 <span className="mr-2">💡</span> Insights e Recomendações
               </Link>
@@ -140,7 +97,7 @@ function App() {
         </nav>
 
         {isMobileMenuOpen && (
-          <div 
+          <div
             className="fixed inset-0 bg-black bg-opacity-50 z-10 md:hidden"
             onClick={() => setIsMobileMenuOpen(false)}
           />
@@ -148,11 +105,12 @@ function App() {
 
         <main id="content-area" className="flex-1 p-4 md:p-6 overflow-y-auto custom-scroll bg-gray-50">
           <Routes>
-            <Route path="/" element={<Dashboard />} />
-            <Route path="/saude" element={<Health />} />
-            <Route path="/medicamentos" element={<Medications />} />
-            <Route path="/localizacao" element={<LocationSecurity />} />
-            <Route path="/insights" element={<Insights />} />
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/demo" element={<Dashboard />} />
+            <Route path="/demo/saude" element={<Health />} />
+            <Route path="/demo/medicamentos" element={<Medications />} />
+            <Route path="/demo/localizacao" element={<LocationSecurity />} />
+            <Route path="/demo/insights" element={<Insights />} />
           </Routes>
         </main>
       </div>
