@@ -346,7 +346,7 @@ function LandingPage() {
                 rel="noopener noreferrer"
                 className="block px-6 py-3 text-center text-white transition duration-300 bg-blue-600 rounded-lg hover:bg-blue-700"
               >
-                Começar Agora
+                Tenho interesse
               </a>
             </div>
 
@@ -397,7 +397,7 @@ function LandingPage() {
                 rel="noopener noreferrer"
                 className="block px-6 py-3 text-center text-white transition duration-300 bg-blue-600 rounded-lg hover:bg-blue-700"
               >
-                Começar Agora
+                Tenho interesse
               </a>
             </div>
 
@@ -443,7 +443,7 @@ function LandingPage() {
                 rel="noopener noreferrer"
                 className="block px-6 py-3 text-center text-white transition duration-300 bg-blue-600 rounded-lg hover:bg-blue-700"
               >
-                Começar Agora
+                Tenho interesse
               </a>
             </div >
           </div >
