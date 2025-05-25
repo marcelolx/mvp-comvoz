@@ -344,12 +344,14 @@ function LandingPage() {
                   10% de desconto no plano anual
                 </li>
               </ul>
-              <Link
-                to="/demo"
+              <a
+                href="https://wa.me/5549999464580"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="block text-center bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300"
               >
                 Começar Agora
-              </Link>
+              </a>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-md border-2 border-blue-500 transform scale-105">
               <div className="bg-blue-500 text-white text-sm font-semibold px-3 py-1 rounded-full inline-block mb-4">
@@ -386,12 +388,14 @@ function LandingPage() {
                   15% de desconto + Smartwatch ComVóz grátis no plano anual
                 </li>
               </ul>
-              <Link
-                to="/demo"
+              <a
+                href="https://wa.me/5549999464580"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="block text-center bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300"
               >
                 Começar Agora
-              </Link>
+              </a>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-md">
               <h3 className="text-xl font-semibold mb-4">Premium</h3>
@@ -425,12 +429,14 @@ function LandingPage() {
                   20% de desconto + Smartwatch ComVóz grátis no plano anual
                 </li>
               </ul>
-              <Link
-                to="/demo"
+              <a
+                href="https://wa.me/5549999464580"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="block text-center bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300"
               >
                 Começar Agora
-              </Link>
+              </a>
             </div>
           </div>
         </div>
