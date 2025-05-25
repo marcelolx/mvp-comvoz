@@ -377,10 +377,6 @@ function LandingPage() {
                   <span className="text-green-500 mr-2">✓</span>
                   Suporte prioritário
                 </li>
-                <li className="flex items-center">
-                  <span className="text-green-500 mr-2">✓</span>
-                  Até 3 usuários
-                </li>
                 <li className="flex items-center text-blue-600 font-semibold">
                   <span className="text-blue-600 mr-2">🎁</span>
                   15% de desconto + Smartwatch ComVóz grátis no plano anual
@@ -415,10 +411,6 @@ function LandingPage() {
                 <li className="flex items-center">
                   <span className="text-green-500 mr-2">✓</span>
                   Suporte médico online
-                </li>
-                <li className="flex items-center">
-                  <span className="text-green-500 mr-2">✓</span>
-                  Até 5 usuários
                 </li>
                 <li className="flex items-center">
                   <span className="text-green-500 mr-2">✓</span>
